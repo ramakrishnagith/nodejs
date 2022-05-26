@@ -1,0 +1,45 @@
+
+@use "../../../styles/breakpoints.scss";
+
+$header-height: 10vh;
+$footer-height: 10vh;
+.kng-shell {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    &__header {
+        width: 100%;
+        height: calc($header-height/2);
+        @include breakpoints.respond-to("md") {
+            height: $header-height;
+        }
+    }
+    &__content {
+        width: 100%;
+        height: auto;
+        &--windowed {
+            height: calc(100vh - calc(calc($header-height/2) + $footer-height));
+            overflow: auto;
+            @include breakpoints.respond-to("md") {
+                height: calc(100vh - calc($header-height + $footer-height));
+            }
+        }
+        &--fixed-footer {
+            padding-bottom: $footer-height;
+        }
+    }
+    &__footer {
+        height: $footer-height;
+        width: 100%;
+        &--hidden {
+            display: none;
+        }
+        &--fixed {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}

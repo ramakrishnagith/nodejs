@@ -1,0 +1,47 @@
+$black: #111212;
+$white: #FFFFFF;
+$darkest: (
+    main: #943600,
+    secondary: #0B4173,
+    tertiary: #434546
+);
+$darker: (
+    main: #C74900,
+    secondary: #1265B3,
+    tertiary: #616365
+);
+$primary: (
+    main: #FF6A13,
+    secondary: #1887F2,
+    tertiary: #75787B
+);
+$lighter: (
+    main: #FFAB7A,
+    secondary: #77B8F8,
+    tertiary: #B6B8B9
+);
+$lightest: (
+    main: #FFECE0,
+    secondary: #CEE7FF,
+    tertiary: #F7F7F8
+);
+$utility-darker: (
+    main: #167C20,
+    secondary: #930011,
+    tertiary: #D08800
+);
+$utility-lighter: (
+    main: #25B133,
+    secondary: #F14040,
+    tertiary: #FAB73A
+);
+$utility-lightest: (
+    main: #CCF5D9,
+    secondary: #F2CDD1,
+    tertiary: #FFEAC3
+);
+$utility: (
+    darker: $utility-darker,
+    lighter: $utility-lighter,
+    lightest: $utility-lightest
+);

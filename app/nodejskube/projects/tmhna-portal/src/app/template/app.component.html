@@ -1,0 +1,10 @@
+<ng-container *ngIf="state?.shell; else elseTemplate">
+  <tmhna-portal-shell [state]="state.shell">
+    <router-outlet role="content" ></router-outlet>
+  </tmhna-portal-shell>
+</ng-container>
+<ng-template #elseTemplate>
+  Initializing app
+</ng-template>
+
+

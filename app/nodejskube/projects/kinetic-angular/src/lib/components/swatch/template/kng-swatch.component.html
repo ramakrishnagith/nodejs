@@ -1,0 +1,10 @@
+<ng-container *ngIf="state.tone !== null; else elseTemplate">
+    <div class="kng-swatch kng-swatch--{{state.code}}-{{state.tone}}" >
+        {{state.code}} - {{state.tone}}
+    </div>
+</ng-container>
+<ng-template #elseTemplate>
+    <div class="kng-swatch kng-swatch--{{state.code}}" >
+        {{state.code}} - {{state.tone}}
+    </div>
+</ng-template>

@@ -1,0 +1,12 @@
+<div class="kng-shell">
+    <kng-header-nav class="kng-shell__header" #header [state]="state.header"></kng-header-nav>
+    <kng-content class="kng-shell__content" #content [state]="state.content" [ngClass]="{'kng-shell__content--windowed': state.content.windowed, 'kng-shell__content--fixed-footer': content.hasFixedFooter()}">
+        <ng-content select="[role=content]"></ng-content>
+    </kng-content>
+    <kng-footer class="kng-shell__footer" #footer [state]="state.footer" [ngClass]="{'kng-shell__footer--hidden': state.footer.hidden, 'kng-shell__footer--fixed': state.footer.fixed}">{{state.footer.hidden}}
+        <ng-content select="[role=footer]"></ng-content>
+    </kng-footer>
+    <kng-modal-block [state]="state.modal" #modalBlock >
+        <ng-content select="[role=modal]"></ng-content>
+    </kng-modal-block>
+</div>

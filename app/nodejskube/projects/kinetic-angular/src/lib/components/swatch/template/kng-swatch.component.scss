@@ -1,0 +1,86 @@
+@use '../../../styles/swatches.scss';
+@use 'sass:map';
+
+.kng-swatch {
+    width: 100%;
+    height: 100%;
+    &--black {
+        background: swatches.$black;
+    }
+    &--white {
+        background: swatches.$white;
+    }
+    &--darkest-main {
+        background: map.get(swatches.$darkest, 'main');
+    }
+    &--darkest-secondary {
+        background: map.get(swatches.$darkest, 'secondary');
+    }
+    &--darkest-tertiary {
+        background: map.get(swatches.$darkest, 'tertiary');
+    }
+    &--darker-main {
+        background: map.get(swatches.$darker, 'main');
+    }
+    &--darker-secondary {
+        background: map.get(swatches.$darker, 'secondary');
+    }
+    &--darker-tertiary {
+        background: map.get(swatches.$darker, 'tertiary');
+    }
+    &--primary-main {
+        background: map.get(swatches.$primary, 'main');
+    }
+    &--primary-secondary {
+        background: map.get(swatches.$primary, 'secondary');
+    }
+    &--primary-tertiary {
+        background: map.get(swatches.$primary, 'tertiary');
+    }
+    &--lighter-main {
+        background: map.get(swatches.$lighter, 'main');
+    }
+    &--lighter-secondary {
+        background: map.get(swatches.$lighter, 'secondary');
+    }
+    &--lighter-tertiary {
+        background: map.get(swatches.$lighter, 'tertiary');
+    }
+    &--lightest-main {
+        background: map.get(swatches.$lightest, 'main');
+    }
+    &--lightest-secondary {
+        background: map.get(swatches.$lightest, 'secondary');
+    }
+    &--lightest-tertiary {
+        background: map.get(swatches.$lightest, 'tertiary');
+    }
+    &--utility-darker-main {
+        background: map.get(swatches.$utility-darker, 'main');
+    }
+    &--utility-darker-secondary {
+        background: map.get(swatches.$utility-darker, 'secondary');
+    }
+    &--utility-darker-tertiary {
+        background: map.get(swatches.$utility-darker, 'tertiary');
+    }
+    &--utility-lighter-main {
+        background: map.get(swatches.$utility-lighter, 'main');
+    }
+    &--utility-lighter-secondary {
+        background: map.get(swatches.$utility-lighter, 'secondary');
+    }
+    &--utility-lighter-tertiary {
+        background: map.get(swatches.$utility-lighter, 'tertiary');
+    }
+    &--utility-lightest-main {
+        background: map.get(swatches.$utility-lightest, 'main');
+    }
+    &--utility-lightest-secondary {
+        background: map.get(swatches.$utility-lightest, 'secondary');
+    }
+    &--utility-lightest-tertiary {
+        background: map.get(swatches.$utility-lightest, 'tertiary');
+    }
+}
+

@@ -1,0 +1,29 @@
+.modal-card {
+    background: aliceblue;
+    position: fixed;
+    min-width: 60vw;
+    min-height: 60vh;
+    top: 20vh;
+    left: 20vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+kng-shell {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    // ::ng-deep kng-footer {
+    //     height: 10vh;
+    //     width: 100vw;
+    //     display: flex;
+    //     flex-flow: row wrap;
+    //     flex: 1 0 100%;
+    //     .kng-footer--fixed {
+    //         height: 10vh;
+    //     }
+    // }
+}
